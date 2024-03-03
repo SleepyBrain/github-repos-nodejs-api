@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
 
     res.send(repos);
   } catch (error) {
-    res.status(400).send('Error while getting list of repositories');
+    res.status(400).send('Error while getting list of repositories. ' + error);
   }
 });
 
